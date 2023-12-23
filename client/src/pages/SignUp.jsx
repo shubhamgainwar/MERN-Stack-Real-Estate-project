@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Spinner from "../assets/Spinner";
 
 const SignUp = () => {
   const [formData, SetFormData] = useState();
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -66,9 +67,9 @@ const SignUp = () => {
         />
         <button
           disabled={loading}
-          className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
+          className="bg-amber-600 text-slate-900 p-3 rounded-lg  hover:opacity-95 disabled:opacity-80"
         >
-          {loading ? "Loading..." : "Sign In"}
+          {loading ? <Spinner /> : "Sign Up"}
         </button>
       </form>
       <div className="flex gap-2 mt-5">
