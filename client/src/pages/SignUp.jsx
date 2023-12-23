@@ -5,7 +5,7 @@ import Spinner from "../assets/Spinner";
 const SignUp = () => {
   const [formData, SetFormData] = useState();
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
