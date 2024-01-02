@@ -11,7 +11,7 @@ const Header = () => {
         <Link to="/">
           <div className="text-3xl font-semibold ">
             <span className="bg-clip-text text-transparent bg-gradient-to-r to-slate-900 from-amber-600">
-              XiloReality
+              Xilo
             </span>
           </div>
         </Link>
